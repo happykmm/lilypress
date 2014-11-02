@@ -1,0 +1,48 @@
+body {
+	background-color: rgb(245,245,245);
+}
+
+#header  {
+	width: 100%;
+	height: 35px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+
+#header .navbar-brand {
+	position: absolute;
+	left: 30px;
+    color: rgb(205,205,205);
+}
+
+#header .navbar-text {
+	position: absolute;
+	top: 0;
+	left: 150px;
+    color: rgb(205,205,205);
+}
+
+#left {
+	width: 180px;
+	height: 100%;
+	margin: 0 0 0 0;
+	padding: 100px 0 0 0;
+	border: 0;
+	position: fixed;
+	top: 0;
+	background: rgb(220,220,220);
+	z-index: 900;
+}
+
+
+#rightwrap {
+	padding: 50px 30px 0 210px;
+	background-color: rgb(245,245,245);
+}
+
+
+
