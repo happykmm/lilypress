@@ -1,5 +1,5 @@
 <?php
-class Front extends CI_Controller {
+class Front extends MY_Controller {
 
     public function __construct()
     {
@@ -11,16 +11,16 @@ class Front extends CI_Controller {
     public function home()
     {
         $data['article'] = $this->front_model->get_article(10,0);
-        $this->load->view("templates/front-header");
-        $this->load->view("front/home", $data);
-        $this->load->view("templates/front-footer");
+        //$this->load->view("front/home", $data);
+        $this->assign('data', $data);
+        $this->display("front/home.php");
     }
 
     public function article($id = 0)
     {
         $data['article_item'] = $this->front_model->get_article_id($id);
-        $this->load->view("templates/front-header");
-        $this->load->view("front/article", $data);
-        $this->load->view("templates/front-footer");
+        //$this->load->view("front/article", $data);
+        $this->assign('data', $data);
+        $this->display("front/article.php");
     }
 }
